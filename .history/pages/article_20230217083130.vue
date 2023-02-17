@@ -1,0 +1,12 @@
+<script>
+useSchemaOrg([
+  defineArticle({
+    //
+    headline: "My Article",
+    author: [
+      { name: "John doe", url: "https://johndoe.com" },
+      { name: "Jane doe", url: "https://janedoe.com" },
+    ],
+  }),
+])
+</script>
