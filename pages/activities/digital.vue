@@ -12,6 +12,105 @@
             Overview of digital tools and platforms produced by PARIS IAS, le creuset de l'intelligence collective B-)</v-card
           >
         </v-col>
+        <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="red-lighten-3"
+          height="400"
+          :to="localePath('resources')"
+            link
+        >
+          Fellowships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="green-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+          Memberships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="pink-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+         Projects overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="red-lighten-3"
+          height="400"
+          :to="localePath('resources')"
+            link
+        >
+          Fellowships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="green-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+          Memberships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="pink-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+         Projects overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="red-lighten-3"
+          height="400"
+          :to="localePath('resources')"
+            link
+        >
+          Fellowships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="green-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+          Memberships overview</v-card
+        >
+      </v-col>
+      <v-col cols="4" >
+        <v-card
+          class="d-flex align-center justify-center"
+          color="pink-lighten-3"
+          height="400"
+          :to="localePath('carousel')"
+            link
+        >
+         Projects overview</v-card
+        >
+      </v-col>
       </v-row>
     </v-container>
   </template>

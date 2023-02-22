@@ -1,26 +1,28 @@
 import config from "./static.config"
-import vuetify from 'vite-plugin-vuetify'
+import vuetify from "vite-plugin-vuetify"
 console.log("config: ", config)
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: '%pageTitle %titleSeparator %siteName'
-    }
-  },vite: {
+      titleTemplate: "%pageTitle %titleSeparator %siteName",
+    },
+    baseURL: '/seed/'
+  },
+  vite: {
     ssr: {
-      noExternal: ['vuetify']
-    }
+      noExternal: ["vuetify"],
+    },
   },
   extends: ["nuxt-seo-kit"],
-  css: ['vuetify/styles'],
+  css: ["vuetify/styles"],
   modules: [
     async (options, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (viteConfig) =>
-      viteConfig.plugins.push(vuetify())
+      nuxt.hooks.hook("vite:extendConfig", (viteConfig) =>
+        viteConfig.plugins.push(vuetify())
       )
     },
     "@vueuse/nuxt",
-     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
+    ["@pinia/nuxt", { autoImports: ["defineStore"] }],
     "@nuxtjs/color-mode",
     [
       "@nuxt/image-edge",
@@ -66,7 +68,7 @@ export default defineNuxtConfig({
         ],
       },
     ],
-    ['@vite-pwa/nuxt', {}],
+    ["@vite-pwa/nuxt", {}],
     "@nuxtjs/device",
     [
       "@nuxtjs/google-fonts",
@@ -108,6 +110,7 @@ export default defineNuxtConfig({
         },
       },
     ],
+
     ["nuxt-typed-router", {}],
     /* [ // disabled while it is not working with Nuxt 3.2.0
       "nuxt-security",
@@ -187,9 +190,8 @@ export default defineNuxtConfig({
         enabled: true,
       },
     ], */
-    
   ],
-  components: [     '~/components/navigation' ,    '~/components',  ],
+  components: ["~/components/navigation", "~/components"],
   // for nuxt schema
 
   runtimeConfig: {
@@ -198,7 +200,7 @@ export default defineNuxtConfig({
       siteName: config.name || "Awesome Site",
       siteDescription: config.description || "Welcome to my awesome site!",
       language: "en", // prefer more explicit language codes like `en-AU` over `en`
-      titleSeparator:   config.titleSeparator ||'|',
+      titleSeparator: config.titleSeparator || "|",
     },
   },
   experimental: {

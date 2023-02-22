@@ -12,7 +12,7 @@
             Overview of PARIS IAS activities text: link to scientific policy, sab, support us</v-card
           >
         </v-col>
-        <v-col cols="4" v-if="smAndUp">
+        <v-col cols="4" >
         <v-card
           class="d-flex align-center justify-center"
           color="red-lighten-3"
@@ -23,7 +23,7 @@
           Fellowships overview</v-card
         >
       </v-col>
-      <v-col cols="4" v-if="smAndUp">
+      <v-col cols="4" >
         <v-card
           class="d-flex align-center justify-center"
           color="green-lighten-3"
@@ -34,7 +34,7 @@
           Memberships overview</v-card
         >
       </v-col>
-      <v-col cols="4" v-if="smAndUp">
+      <v-col cols="4" >
         <v-card
           class="d-flex align-center justify-center"
           color="pink-lighten-3"
