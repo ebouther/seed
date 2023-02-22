@@ -13,6 +13,9 @@ export default defineNuxtConfig({
       noExternal: ["vuetify"],
     },
   },
+  router: {
+    base: '/seed/',
+  },
   extends: ["nuxt-seo-kit"],
   css: ["vuetify/styles"],
   modules: [
