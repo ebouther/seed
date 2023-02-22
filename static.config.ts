@@ -16,6 +16,7 @@ export default {
   // graphqlApiKey: 'da2-eb5bkfhsvbdz3mexfykmkwjka4',
   keywords: "open source, open science, science, vuejs, nuxt, vuetify, vuex",
   url: "https://paris.pias.science",
+  logo: "/icon.png",
   titleSeparator: " | ",
   lang: {
     default: "en",

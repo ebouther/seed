@@ -1,1 +1,0 @@
-<script>useSchemaOrg([  defineWebPage({    '@type': ['CollectionPage', 'SearchResultsPage'],  })])</script>

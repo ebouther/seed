@@ -1,7 +1,0 @@
-<template> <div class="fu"> isMobile = {{ isMobile }}</div>  <ContentDoc /></template>
-<script setup>const { isMobile } = useDevice();</script>
-<style>
-.fu {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-}</style>

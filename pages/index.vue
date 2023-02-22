@@ -1,26 +1,83 @@
 <template>
-  <div>
-    <Logos mb-6 />
-    <a href="https://fgerfgerf.fgr/dfzefze"></a>
-    <form>
-      <select v-model="locale">
-        <option value="en">en</option>
-        <option value="fr">fr</option>
-      </select>
-      <p>{{ $t("foo") }}</p>
-    </form>
-    <Suspense>
-      <PageView />
-      <template #fallback>
-        <div op50 italic>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
-  </div>
+  <v-container>
+    <v-row>
+      <v-col cols="12">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="grey-lighten-3"
+          height="424"
+          :to="localePath('carousel')"
+          link
+        >
+          Carousel</v-card
+        >
+      </v-col>
+      <v-col cols="12">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="purple-lighten-3"
+          height="200"
+          :to="localePath('/about/institute')"
+          link
+        >
+          Institute presentation</v-card
+        >
+      </v-col>
+      <v-col cols="12" sm="8">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="green-lighten-3"
+          height="250"
+          :to="localePath('events')"
+          link
+          >Upcoming Events</v-card
+        ></v-col
+      >
+      <v-col cols="4" v-show="smAndUp">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="red-lighten-3"
+          height="250"
+          :to="localePath('activities/fellowships')"
+          link
+          >Ads</v-card
+        ></v-col
+      >
+
+      <v-col cols="4" v-show="smAndUp">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="blue-lighten-3"
+          height="250"
+          >Twitter feed</v-card
+        ></v-col
+      ><v-col cols="12" sm="8">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="yellow-lighten-3"
+          height="250"
+          >Featured resources</v-card
+        ></v-col
+      >
+      <v-col cols="12">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="orange-lighten-3"
+          height="400"
+        >
+          our fellows</v-card
+        ></v-col
+      >
+    </v-row>
+  </v-container>
 </template>
-<script setup>
+
+<script lang="ts" setup>
+import { useDisplay } from "vuetify"
+const { smAndUp } = useDisplay()
+const localePath = useLocalePath()
+
 const { locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
+const drawer = ref(false)
 </script>

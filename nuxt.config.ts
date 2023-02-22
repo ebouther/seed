@@ -1,17 +1,26 @@
 import config from "./static.config"
+import vuetify from 'vite-plugin-vuetify'
 console.log("config: ", config)
 export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: '%pageTitle %titleSeparator %siteName'
     }
+  },vite: {
+    ssr: {
+      noExternal: ['vuetify']
+    }
   },
   extends: ["nuxt-seo-kit"],
-
+  css: ['vuetify/styles'],
   modules: [
+    async (options, nuxt) => {
+      nuxt.hooks.hook('vite:extendConfig', (viteConfig) =>
+      viteConfig.plugins.push(vuetify())
+      )
+    },
     "@vueuse/nuxt",
-    "@unocss/nuxt",
-    "@pinia/nuxt",
+     ['@pinia/nuxt', { autoImports: ['defineStore'] }],
     "@nuxtjs/color-mode",
     [
       "@nuxt/image-edge",
@@ -57,7 +66,7 @@ export default defineNuxtConfig({
         ],
       },
     ],
-
+    ['@vite-pwa/nuxt', {}],
     "@nuxtjs/device",
     [
       "@nuxtjs/google-fonts",
@@ -177,9 +186,10 @@ export default defineNuxtConfig({
         basicAuth: false,
         enabled: true,
       },
-    ], */['@morev/vue-transitions/nuxt', {}],
-    ['@vite-pwa/nuxt', {}]
+    ], */
+    
   ],
+  components: [     '~/components/navigation' ,    '~/components',  ],
   // for nuxt schema
 
   runtimeConfig: {
@@ -195,7 +205,6 @@ export default defineNuxtConfig({
     reactivityTransform: true,
     inlineSSRStyles: false,
   },
-  css: ["@unocss/reset/tailwind.css"],
   colorMode: {
     classSuffix: "",
   },

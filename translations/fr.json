@@ -1,3 +1,20 @@
 {
-  "foo": "bourre"
+  "foo": "bourre",
+  "french": "Français",
+  "english": "Anglais",
+  "paris-ias": "IEA de PARIS",
+  "about-us": "A propos",
+  "contact": "Contact",
+  "pressroom": "Salle de presse",
+  "support": "Soutenez-nous",
+  "subscribe-to-our-newsletter": "Inscivez-vous à notre newsletter",
+  "email": "Email",
+  "subscribe": "S'inscrire",
+  "tos": "Conditions d'utilisation",
+  "privacy": "Politique de confidentialité",
+  "invalid-e-mail": "Email invalide",
+  "about": "À propos",
+  "activity": "Activités",
+  "events": "Événements",
+  "people": "Personnes"
 }

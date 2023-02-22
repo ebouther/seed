@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useRootStore } from "~/store/root"
+
 const config = useAppConfig()
 useHead({
   title: config.name,
@@ -25,12 +27,22 @@ useSchemaOrg([
   }),
   defineWebPage(),
 ])
+const rootStore = useRootStore()
+const handleScroll = () => {
+  return rootStore.setScrolled(window.scrollY > 0)
+}
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+})
+
 </script>
 
 <template>
-  <!-- a. Generates browser screenshots for every page -->
-  <!-- b. Generate saotir images for every page (uses the default template) -->
-  <NuxtLayout>
+  <NuxtLayout @scroll="handleScroll()">
     <NuxtPage />
   </NuxtLayout>
 </template>
