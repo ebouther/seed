@@ -7,7 +7,7 @@
           color="yellow-lighten-3"
           height="400"
         >
-          Picture/Ads/illustration/Paulius&Saadi picture</v-card
+          <nuxt-img src="/images/Paulius_Yamin.jpg"></nuxt-img></v-card
         >
       </v-col>
       <v-col cols="12" sm="8">
@@ -15,9 +15,9 @@
           class="d-flex align-center justify-center"
           color="blue-lighten-3"
           height="400"
-          :to="localePath('/activities/network')"
         >
-        scientific policy</v-card
+        <ContentDoc :path=" $i18n.locale + '/pages/about/scientific_policy'" />
+</v-card
         >
       </v-col>
         <v-col cols="12">
@@ -36,10 +36,10 @@
           class="d-flex align-center justify-center"
           color="red-lighten-3"
           height="400"
-          :to="localePath('resources')"
+          :to="localePath('reports')"
             link
         >
-          Link to resources (?)</v-card
+          Link to annual reports</v-card
         >
       </v-col>
       <v-col cols="4" v-if="smAndUp">

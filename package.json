@@ -3,7 +3,7 @@
   "packageManager": "yarn@1.22",
   "scripts": {
     "build": "nuxi build",
-    "dev": "nuxi dev NUXT_APP_BASE_URL=//",
+    "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "postinstall": "nuxi prepare",

@@ -9,7 +9,8 @@
             :to="localePath('carousel')"
             link
           >
-            Overview of PARIS IAS activities text: link to scientific policy, sab, support us</v-card
+        <ContentDoc path="/en/pages/activities/activities_overview" />
+</v-card
           >
         </v-col>
         <v-col cols="4" >

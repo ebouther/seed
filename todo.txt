@@ -1,0 +1,17 @@
+Collections:
+- people
+- events
+- resources
+
+Document collections:
+- fellowships
+- Carousel
+- Members
+- partners
+- sponsors
+- SAB
+- Ads
+- digital projects
+
+Question:
+- Should we add a FAQ?

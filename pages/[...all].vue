@@ -3,15 +3,17 @@ const router = useRouter()
 </script>
 
 <template>
-  <main p="x4 y10" text="center teal-700 dark:gray-200">
-    <div text-4xl>
-      <div i-carbon-warning inline-block />
-    </div>
-    <div>Not found</div>
-    <div>
-      <button btn text-sm m="3 t8" @click="router.back()">
-        Back
-      </button>
-    </div>
-  </main>
+  <v-container>
+    <v-row>
+      <v-col cols="12" class="d-flex justify-center align-center flex-column">
+        <div class="text-h1">404</div>
+        <div class="text-h4">{{ $t("page-not-found") }}</div>
+        <div>
+          <v-btn class="ma-6" @click="router.back()">
+         <v-icon left>mdi-chevron-left</v-icon>   {{ $t("back") }}
+          </v-btn>
+        </div></v-col
+      >
+    </v-row>
+  </v-container>
 </template>

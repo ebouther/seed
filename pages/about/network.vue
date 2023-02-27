@@ -9,6 +9,8 @@
           :to="localePath('carousel')"
           link
         >
+          <ContentDoc :path=" $i18n.locale + '/pages/about/network'" />
+
           Network page intro text</v-card
         >
       </v-col>
@@ -32,16 +34,18 @@
           link
           >Ad/call to action membership</v-card
         ></v-col
-      ><v-col  cols="12" sm="6">
+      ><v-col cols="12" sm="6">
         <v-card
           class="d-flex align-center justify-center"
           color="yellow-lighten-3"
           height="400"
           :to="localePath('/support')"
           link
-          >Intro to partners and thanks to partners</v-card
-        ></v-col
-      >
+        >
+          <ContentDoc
+            :path=" $i18n.locale + '/pages/about/partners'"
+          /> </v-card
+      ></v-col>
       <v-col cols="12" sm="6">
         <v-card
           class="d-flex align-center justify-center"

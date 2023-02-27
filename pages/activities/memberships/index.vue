@@ -9,7 +9,8 @@
             :to="localePath('carousel')"
             link
           >
-            Overview of members benefits, link to the  &nbsp;<nuxt-link :to="localePath('/about/network')">network page</nuxt-link>, link to the  &nbsp;<nuxt-link :to="localePath('/people/fellows')">hosting details</nuxt-link></v-card>
+          <ContentDoc :path=" $i18n.locale + '/pages/activities/membership_overview'" />
+           </v-card>
         </v-col>
         <v-col cols="4" v-if="smAndUp">
         <v-card

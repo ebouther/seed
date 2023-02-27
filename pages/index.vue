@@ -3,15 +3,17 @@
     <v-row>
       <v-col cols="12">
         <v-card
-          class="d-flex align-center justify-center"
+          class="d-flex align-center justify-center flex-column"
           color="grey-lighten-3"
           height="424"
           :to="localePath('carousel')"
           link
         >
-          Carousel</v-card
+        CAROUSEL
+          <Carousel></Carousel></v-card
         >
       </v-col>
+      {{ $i18n.locale }}
       <v-col cols="12">
         <v-card
           class="d-flex align-center justify-center"
@@ -20,6 +22,7 @@
           :to="localePath('/about/institute')"
           link
         >
+        <ContentDoc :path="'/' + $i18n.locale + '/pages/home/institute_presentation'" />
           Institute presentation</v-card
         >
       </v-col>

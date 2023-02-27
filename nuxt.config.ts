@@ -6,15 +6,11 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: "%pageTitle %titleSeparator %siteName",
     },
-    baseURL: '/seed/'
   },
   vite: {
     ssr: {
       noExternal: ["vuetify"],
     },
-  },
-  router: {
-    base: '/seed/',
   },
   extends: ["nuxt-seo-kit"],
   css: ["vuetify/styles"],
@@ -194,7 +190,7 @@ export default defineNuxtConfig({
       },
     ], */
   ],
-  components: ["~/components/navigation", "~/components"],
+  components: ["~/components/navigation", "~/components/home", "~/components"],
   // for nuxt schema
 
   runtimeConfig: {
