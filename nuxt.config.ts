@@ -1,6 +1,5 @@
 import config from "./static.config"
 import vuetify from "vite-plugin-vuetify"
-console.log("config: ", config)
 export default defineNuxtConfig({
   app: {
     head: {
