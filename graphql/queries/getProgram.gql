@@ -1,0 +1,105 @@
+query getProgram($id: Int) {
+  getProgram(id: $id) {
+    blocked {
+      by {
+        entity
+        firstname
+        lastname
+      }
+      at
+      reason
+      content
+      authored
+    }
+    commented {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+      authored
+    }
+    contact {
+      entity
+      firstname
+      lastname
+    }
+    continent
+    country
+    createdAt
+    date
+    description
+    edited {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+      authored
+    }
+    featured {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+      authored
+    }
+    feedback {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+    }
+    field
+    followed
+    location
+    name
+    popularity
+    pubId
+    rating
+    requests {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+      authored
+    }
+    score
+    state
+    status
+    team {
+      entity
+      firstname
+      lastname
+    }
+    thematic
+    time
+    type
+    updatedAt
+    url
+    verified {
+      at
+      by {
+        entity
+        firstname
+        lastname
+      }
+      content
+      authored
+    }
+    zone
+  }
+}

@@ -1,0 +1,38 @@
+query getPeople {
+  getPeople {
+    admin
+    apps {
+      appId
+      roles
+    }
+    createdAt
+    email
+    profile {
+      country
+      entity {
+        description
+        id
+        logo
+        name
+        place {
+          address
+          id
+          name
+          url
+        }
+      }
+      firstname
+      image
+      linkedin
+      lastname
+      position
+      presentation
+      references
+      twitter
+      wikipedia
+    }
+    settings {
+      lang
+    }
+  }
+}

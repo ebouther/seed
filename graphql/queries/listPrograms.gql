@@ -1,0 +1,18 @@
+query listPrograms($filters: listProgramsInput) {
+  listPrograms(filters: $filters) {
+    programs{
+        updated
+        status
+        pubId
+        name
+        followed
+        feedback
+        entity
+        edited
+        createdAt
+        commented
+        requests
+    }
+    total
+  }
+}

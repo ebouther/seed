@@ -1,0 +1,6 @@
+query listBranchesBase {
+  listBranchesBase {
+    value
+    text
+  }
+}

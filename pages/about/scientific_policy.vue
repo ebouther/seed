@@ -7,7 +7,9 @@
           color="yellow-lighten-3"
           height="400"
         >
-          <nuxt-img src="/images/Paulius_Yamin.jpg"></nuxt-img></v-card
+          <nuxt-img 
+          height="400" fit="contain"
+          src="/images/Paulius_Yamin.jpg"></nuxt-img></v-card
         >
       </v-col>
       <v-col cols="12" sm="8">

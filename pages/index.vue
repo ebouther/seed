@@ -36,7 +36,7 @@
           >Upcoming Events</v-card
         ></v-col
       >
-      <v-col cols="4" v-show="smAndUp">
+      <v-col cols="4" v-if="smAndUp">
         <v-card
           class="d-flex align-center justify-center"
           color="red-lighten-3"
@@ -47,7 +47,7 @@
         ></v-col
       >
 
-      <v-col cols="4" v-show="smAndUp">
+      <v-col cols="4" v-if="smAndUp">
         <v-card
           class="d-flex align-center justify-center"
           color="blue-lighten-3"

@@ -1,0 +1,28 @@
+query getEvent($appId: ID!, $itemId: ID!) {
+  getEvent(appId: $appId, itemId: $itemId) {
+    appId
+    availableSlots
+    bookingState
+    date
+    delay
+    description
+    id
+    image
+    name
+    place {
+      address
+      id
+      name
+      url
+    }
+    slots {
+      firstname
+      institution
+      lastname
+    }
+    state
+    totalSlots
+    type
+    url
+  }
+}

@@ -1,0 +1,33 @@
+query listEvents($filters: ListEventsInput = {}, $appId: ID = "apex") {
+  listEvents(appId: $appId, filters: $filters) {
+    total
+    items {
+      appId
+      availableSlots
+      bookingState
+      date
+      delay
+      description
+      id
+      image
+      name
+      place {
+        address
+        id
+        name
+        url
+      }
+      slots {
+        email
+        firstname
+        institution
+        lang
+        lastname
+      }
+      state
+      type
+      url
+      totalSlots
+    }
+  }
+}

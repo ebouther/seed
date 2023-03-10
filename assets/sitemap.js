@@ -10,28 +10,18 @@ export default {
       ],
     },   {
       text: "activities",
-      path: "/activities",
-      openOnHover:true,
       dropdown: true,
       children: [
         { text: "fellowships", path: "/activities/fellowships" },
-        { text: "memberships", path: "/activities/memberships" },
-        { text: "digital", path: "/activities/digital" },
-        { text: "research", path: "/activities/research" },
+        { text: "programs", path: "/activities/programs" },
+        {
+          text: "events",
+          path: "/activities/events",
+       
+        },
       ],
     }, {
-      text: "events",
-      path: "/events",
-      openOnHover:true,
-      dropdown: true,
-      children: [
-        { text: "upcoming", path: "/events/upcoming" },
-        { text: "browse", path: "/events/browse" },
-      ],
-    },{
       text: "people",
-      path: "/people",
-      openOnHover:true,
       dropdown: true,
       children: [
         { text: "team", path: "/people/team" },
@@ -46,7 +36,6 @@ export default {
       dropdown: true,
       children: [
         { text: "articles", path: "/resources/articles" },
-        { text: "tools", path: "/resources/tools" },
         { text: "proceedings", path: "/resources/proceedings" },
         { text: "browse", path: "/resources/browse" },
       ],

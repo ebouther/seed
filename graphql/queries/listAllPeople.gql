@@ -1,0 +1,8 @@
+query listAllPeople {
+  listAllPeople {
+    people {
+      text
+      value
+    }
+  }
+}

@@ -23,7 +23,7 @@ const { smAndUp } = useDisplay()
       <template v-for="(link, index) in sitemap.main" :key="index" v-if="smAndUp">
         <v-menu :open-on-hover="link.openOnHover" v-if="link.dropdown">
           <template v-slot:activator="{ props }">
-            <v-btn variant="flat" :to="link.path?localePath(link.path):{}" v-bind="props"
+            <v-btn variant="flat"  v-bind="props"
               >{{ $t(link.text) }}
               <v-icon right>mdi-chevron-down</v-icon>
             </v-btn>

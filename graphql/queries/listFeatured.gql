@@ -1,0 +1,22 @@
+query listFeatured($filters: listFeaturedInput) {
+  listFeatured(filters: $filters) {
+    featured{
+      active
+      start
+      stop
+      rank
+      updated
+      status
+      pubId
+      name
+      followed
+      feedback
+      entity
+      edited
+      createdAt
+      commented
+      requests
+    }
+    total
+  }
+}

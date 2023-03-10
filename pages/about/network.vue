@@ -1,7 +1,19 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" sm="3">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="grey-lighten-3"
+          height="400"
+        >
+          
+          <nuxt-img 
+          height="400" fit="contain"
+          src="/images/durandcecile.jpg"></nuxt-img></v-card
+        >
+      </v-col>
+      <v-col cols="12" sm="9">
         <v-card
           class="d-flex align-center justify-center"
           color="grey-lighten-3"
@@ -11,9 +23,10 @@
         >
           <ContentDoc :path=" $i18n.locale + '/pages/about/network'" />
 
-          Network page intro text</v-card
+        </v-card
         >
       </v-col>
+
       <v-col cols="12" sm="8">
         <v-card
           class="d-flex align-center justify-center"

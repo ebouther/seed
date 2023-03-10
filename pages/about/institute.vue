@@ -7,7 +7,10 @@
           color="grey-lighten-3"
           height="400"
         >
-          Picture</v-card
+          Picture
+          <nuxt-img 
+          height="400" fit="contain"
+          src="/images/lahlou_saadi.jpg"></nuxt-img></v-card
         >
       </v-col>
 

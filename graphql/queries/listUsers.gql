@@ -1,0 +1,23 @@
+query listUsers($filters: listUsersInput) {
+  listUsers(filters: $filters) {
+    total
+    users {
+      branch
+      email
+      profile {
+        country
+        entity
+        firstname
+        lastname
+        position
+      }
+      settings {
+        fields
+        thematics
+        types
+      }
+      role
+      createdAt
+    }
+  }
+}

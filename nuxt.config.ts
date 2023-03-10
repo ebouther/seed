@@ -50,6 +50,7 @@ export default defineNuxtConfig({
         lazy: true,
         detectBrowserLanguage: {
           alwaysRedirect: true,
+          redirectOn: 'root',  // recommended
           fallbackLocale: "en",
         },
       },

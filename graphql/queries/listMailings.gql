@@ -1,0 +1,20 @@
+query listMailings($filters: listMailingsInput = {}) {
+  listMailings(filters: $filters) {
+    total
+    mails {
+      _id
+      branch
+      createdAt
+      createdBy {
+        entity
+        firstname
+        lastname
+      }
+      preview
+      subject
+      target
+      text
+      type
+    }
+  }
+}
