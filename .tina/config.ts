@@ -20,9 +20,10 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "pages",
+        label: "English Pages",
+        path: "content/en/pages",
+        format:"md",
         fields: [
           {
             type: "string",
