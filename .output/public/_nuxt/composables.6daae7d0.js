@@ -1,0 +1,1 @@
+import{P as i,Q as r,g as s,R as a,q as n,S as c}from"./entry.08e9f6c2.js";function p(e){const{route:t,router:o,i18n:u}=e||{};return i({route:t||r(),router:o||s(),i18n:u||a(n().$i18n)})}function P(e){const{route:t,router:o,i18n:u}=e||{};return c({route:t||r(),router:o||s(),i18n:u||a(n().$i18n)})}export{P as a,p as u};

@@ -1,7 +1,7 @@
 <template>
   <v-menu offset-y open-on-hover bottom>
     <template v-slot:activator="{ props }">
-      <v-btn v-bind="props" class="" text x-large>
+      <v-btn v-bind="props" class="" x-large>
         {{ $i18n.locale.toUpperCase() }}
         <v-icon right>mdi-chevron-down</v-icon>
       </v-btn>
@@ -10,7 +10,7 @@
       <v-list-item
         v-for="locale in availableLocales"
         :key="locale.code"
-        @click="switchLocalePath(locale.code)"
+        @click="$i18n.setLocale(locale.code)"
       >
         <v-list-item-title class="text-uppercase text-button">
           {{ locale.name.toLowerCase() }}

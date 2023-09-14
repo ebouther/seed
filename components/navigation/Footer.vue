@@ -111,8 +111,8 @@
           </v-row>
           <v-row justify="center" no-gutters class="mt-3">
             <v-col cols="12" align="center">
-              <v-tooltip
-                v-for="(item, index) in socials"
+              <!--  <v-tooltip
+                v-for="(item, index) in socialsRef"
                 :key="index"
                 location="top"
                 :text="item.text"
@@ -133,7 +133,7 @@
                     <v-icon color="white">mdi-{{ item.icon }}</v-icon>
                   </v-btn>
                 </template>
-              </v-tooltip>
+              </v-tooltip> -->
             </v-col>
             <v-col cols="12" align="center" class="mt-3">
               <v-btn variant="text" size="small" nuxt dark>{{
@@ -186,7 +186,7 @@ const { router } = useRouter()
 const nuxtApp = useNuxtApp()
 
 const { $vuetify } = nuxtApp
-
+const socialsRef = ref(socials)
 const panel = reactive([])
 const footer = ref(sitemap.footer)
 const email = ref("")

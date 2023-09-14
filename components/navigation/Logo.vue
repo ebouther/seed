@@ -2,11 +2,12 @@
   <v-app-bar-nav-icon>
     <nuxt-link :to="localePath('/')" :class="{ scrolled: rootStore.scrolled }">
       <nuxt-img
+        contain
+        height="50"
+        width="50"
         fit="contain"
-        height="100"
         format="webp"
         preload
-        class="logo"
         :src="appConfig.logo"
       ></nuxt-img> </nuxt-link
   ></v-app-bar-nav-icon>

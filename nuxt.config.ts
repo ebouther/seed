@@ -1,6 +1,9 @@
 import config from "./static.config"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  site: {
+    url: "https://paris-iea.fr",
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

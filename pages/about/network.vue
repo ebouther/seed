@@ -7,11 +7,12 @@
           color="grey-lighten-3"
           height="400"
         >
-          
-          <nuxt-img 
-          height="400" fit="contain"
-          src="/images/durandcecile.jpg"></nuxt-img></v-card
-        >
+          <nuxt-img
+            height="400"
+            fit="contain"
+            src="/images/durandcecile.jpg"
+          ></nuxt-img
+        ></v-card>
       </v-col>
       <v-col cols="12" sm="9">
         <v-card
@@ -21,10 +22,8 @@
           :to="localePath('carousel')"
           link
         >
-          <ContentDoc :path=" $i18n.locale + '/pages/about/network'" />
-
-        </v-card
-        >
+          <ContentDoc :path="'/pages/' + $i18n.locale + '/network'" />
+        </v-card>
       </v-col>
 
       <v-col cols="12" sm="8">
@@ -55,9 +54,7 @@
           :to="localePath('/support')"
           link
         >
-          <ContentDoc
-            :path=" $i18n.locale + '/pages/about/partners'"
-          /> </v-card
+          <ContentDoc :path="'/pages/' + $i18n.locale + '/partners'" /> </v-card
       ></v-col>
       <v-col cols="12" sm="6">
         <v-card

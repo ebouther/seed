@@ -13,7 +13,7 @@ const crumbs = computed(() => {
     .split("/")
     .filter((item) => item)
     .map((item) => {
-      return { text: item, to: item }
+      return { title: item, href: item, disabled: false }
     })
 })
 console.log("crumbs: ", crumbs.value)
@@ -23,15 +23,19 @@ console.log("crumbs: ", crumbs.value)
   <v-app>
     <TopBar />
     <v-main>
-      <v-container v-if="crumbs">
-        <v-breadcrumbs :items="crumbs"></v-breadcrumbs>
+      <v-container v-if="crumbs && crumbs.length">
+        <v-breadcrumbs :items="crumbs">
+          <template v-slot:title="{ item }">
+            {{ item.title.toUpperCase() }}
+          </template>
+        </v-breadcrumbs>
         <h1
           v-if="
             crumbs.slice(-1)[0] &&
-            crumbs.slice(-1)[0].text &&
-            crumbs.slice(-1)[0].text.length
+            crumbs.slice(-1)[0].title &&
+            crumbs.slice(-1)[0].title.length
           "
-          v-html="$t(crumbs.slice(-1)[0].text)"
+          v-html="$t(crumbs.slice(-1)[0].title)"
         ></h1>
         <v-divider></v-divider>
       </v-container>

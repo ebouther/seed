@@ -1,15 +1,14 @@
 export default {
   env: { NODE_ENV: "dev" },
-  name: "PPIAS",
-  full_name: "Proceedings of the Paris Institute for Advanced Study", // set to false if there is none
-  full_name_html:
-    "Proceedings of the Paris&nbsp;Institute<br>for Advanced&nbsp;Study", // set to false if there is none
+  name: "PARIS IAS",
+  full_name: "Paris Institute for Advanced Studies", // set to false if there is none
+  full_name_html: "Paris&nbsp;Institute<br>for Advanced&nbsp;Studies", // set to false if there is none
   address: "17, Quai d'Anjou 75004 PARIS - FRANCE",
   phone: "+33(0)1 56 81 00 52",
   email: "publications@paris-iea.fr",
-  subtitle: "Open source publishing platform for open science.",
-  description: "Open source publishing platform for open science.",
-  splash_title: "Open source publishing platform for open science.",
+  subtitle: "Paris Institute for Advanced Studies",
+  description: "Paris Institute for Advanced Studies",
+  splash_title: "Paris Institute for Advanced Studies",
   recaptcha: "6Lc_xuUUAAAAALwowUq0cC0wFtFnZ2NCi3UH4i1j",
   graphqlEndpoint:
     "https://n6qlmrmuybdrldzerh6qudsai4.appsync-api.eu-west-2.amazonaws.com/graphql",
