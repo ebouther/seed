@@ -1,4 +1,4 @@
 ---
-id: governance
+title: governance
 ---
 Governance is serious business

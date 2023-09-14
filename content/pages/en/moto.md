@@ -1,4 +1,4 @@
 ---
-id: moto
+title: moto
 ---
 It's all about collective intelligence

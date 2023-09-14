@@ -1,4 +1,4 @@
 ---
-id: test
+title: test
 ---
 test fr

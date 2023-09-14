@@ -1,4 +1,4 @@
 ---
-id: scientific_policy
+title: scientific_policy
 ---
 Here comes the scientific policy text. 
