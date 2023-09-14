@@ -1,0 +1,85 @@
+<template>
+  <v-app-bar
+    v-scroll="handleScroll"
+    :class="{ fixed: fixed }"
+    fixed
+    class="header"
+    dense
+    app
+    height="auto"
+  >
+    <NuxtLink v-slot="{ navigate }" :to="$config.app.baseURL" custom>
+      <NuxtImg height="60" src="/logo.png" @click="navigate" />
+    </NuxtLink>
+    <NuxtLink v-slot="{ navigate }" to="/about-us" custom>
+      <v-btn variant="flat" @click="navigate" class="mr-1">About Us </v-btn>
+    </NuxtLink>
+  </v-app-bar>
+</template>
+<script>
+import { useAuth } from "~/composables/useAuth"
+import { useUserStore } from "~/store/user"
+export default defineComponent({
+  setup() {
+    const isLoggedIn = computed(useAuth)
+    const loading = ref(false)
+    const fixed = ref(false)
+    const handleLogout = () => {
+      loading.value = true
+
+      setTimeout(() => {
+        useUserStore().logout()
+        loading.value = false
+      }, 2000)
+    }
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        fixed.value = true
+      } else {
+        fixed.value = false
+      }
+    }
+    return {
+      fixed,
+      isLoggedIn,
+      loading,
+      handleLogout,
+      handleScroll,
+    }
+  },
+})
+</script>
+
+<style lang="scss" scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-inline: 1rem;
+}
+.mr-1 {
+  margin-right: 4rem;
+}
+</style>
+<style lang="scss">
+.header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.animated {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
