@@ -8,10 +8,12 @@
           height="400"
         >
           Picture
-          <nuxt-img 
-          height="400" fit="contain"
-          src="/images/lahlou_saadi.jpg"></nuxt-img></v-card
-        >
+          <nuxt-img
+            height="400"
+            fit="contain"
+            src="/images/lahlou_saadi.jpg"
+          ></nuxt-img
+        ></v-card>
       </v-col>
 
       <v-col cols="12" sm="6">
@@ -25,18 +27,16 @@
       </v-col>
       <v-col cols="12">
         <v-card
-          class="d-flex align-center justify-center"
+          class="d-flex align-center justify-center flex-row"
           color="green-lighten-3"
           height="400"
         >
-          Presentation text with link to&nbsp;<nuxt-link :to="localePath('/support_us')">support us</nuxt-link>,
-          &nbsp;<nuxt-link :to="localePath('/people/fellows')">fellowships</nuxt-link
-          >, &nbsp;<nuxt-link :to="localePath('/people/team')">team</nuxt-link>,
-          &nbsp;<nuxt-link :to="localePath('/activity/digital')">projects</nuxt-link>
-          &nbsp;and
-          &nbsp;<nuxt-link :to="localePath('/resources')">resources</nuxt-link>
+          <ContentDoc
+            :path="'/pages/' + $i18n.locale + '/institute_description'"
+          />
         </v-card>
-      </v-col>  <v-col cols="4">
+      </v-col>
+      <v-col cols="4">
         <v-card
           class="d-flex align-center justify-center"
           color="yellow-lighten-3"
@@ -50,17 +50,11 @@
           class="d-flex align-center justify-center"
           color="brown-lighten-3"
           height="400"
-          :to="localePath('/activities/network')"
         >
-          Text about the place linked to
-          <nuxt-link :to="localePath('/activities/fellows/accommodations')"
-            >fellows accommodations</nuxt-link
-          >
-          and
-          <nuxt-link :to="localePath('/activities/membership')"
-            >members presentation</nuxt-link
-          ></v-card
-        >
+          <ContentDoc
+            :path="'/pages/' + $i18n.locale + '/institute_location_description'"
+          />
+        </v-card>
       </v-col>
       <v-col cols="8">
         <v-card
@@ -68,12 +62,10 @@
           color="red-lighten-3"
           height="400"
         >
-          Governance text with link to
-          <nuxt-link :to="localePath('/about/scientific_policy')"
-            >scientific policy</nuxt-link
-          >
-          and <nuxt-link :to="localePath('/people/sab')">sab</nuxt-link></v-card
-        >
+          <ContentDoc
+            :path="'/pages/' + $i18n.locale + '/institute_governance'"
+          />
+        </v-card>
       </v-col>
       <v-col cols="4">
         <v-card
@@ -85,7 +77,6 @@
           Network overview</v-card
         >
       </v-col>
-    
     </v-row>
   </v-container>
 </template>

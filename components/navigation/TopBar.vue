@@ -13,9 +13,11 @@ const { smAndUp } = useDisplay()
   <v-app-bar>
     <!--  WEBSITE LOGO -->
     <Logo></Logo>
-    <v-app-bar-title class="align-start">{{
-      config.full_name
-    }}</v-app-bar-title>
+    <v-app-bar-title class="align-start">
+      <nuxt-link :to="localePath('/')" class="text-black">{{
+        config.full_name
+      }}</nuxt-link></v-app-bar-title
+    >
 
     <template v-slot:append>
       <!--  NAVIGATION -->

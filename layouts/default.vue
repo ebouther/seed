@@ -24,9 +24,9 @@ console.log("crumbs: ", crumbs.value)
     <TopBar />
     <v-main>
       <v-container v-if="crumbs && crumbs.length">
-        <v-breadcrumbs :items="crumbs">
+        <v-breadcrumbs :items="crumbs" class="pl-0">
           <template v-slot:title="{ item }">
-            {{ item.title.toUpperCase() }}
+            {{ $t(item.title).toUpperCase() }}
           </template>
         </v-breadcrumbs>
         <h1
@@ -35,8 +35,9 @@ console.log("crumbs: ", crumbs.value)
             crumbs.slice(-1)[0].title &&
             crumbs.slice(-1)[0].title.length
           "
-          v-html="$t(crumbs.slice(-1)[0].title)"
-        ></h1>
+        >
+          {{ $t(crumbs.slice(-1)[0].title) }}
+        </h1>
         <v-divider></v-divider>
       </v-container>
       <slot />

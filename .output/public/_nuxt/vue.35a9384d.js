@@ -1,0 +1,1 @@
+import{u as o}from"./entry.b25474bd.js";function a(e,r){return e||(e={}),e._resolver=r,e}function c(e){return a(e,"article")}function i(e){return o({script:[{type:"application/ld+json",id:"schema-org-graph",key:"schema-org-graph",nodes:e}]})}export{c as d,i as u};
