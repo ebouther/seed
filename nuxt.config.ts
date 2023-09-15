@@ -81,7 +81,12 @@ export default defineNuxtConfig({
   image: {
     // https://image.nuxt.com/get-started/configuration
   },
-  components: ["~/components/navigation", "~/components/home", "~/components"],
+  components: [
+    "~/components/navigation",
+    "~/components/home",
+    "~/components",
+    "~/components/people",
+  ],
 
   i18n: {
     langDir: "translations/",

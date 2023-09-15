@@ -37,13 +37,15 @@
         </v-card>
       </v-col>
       <v-col cols="4">
-        <v-card
-          class="d-flex align-center justify-center"
-          color="yellow-lighten-3"
-          height="400"
-        >
-          Picture Lauzun</v-card
-        >
+        <v-card class="d-flex align-center justify-center" height="400">
+          <v-carousel cycle hide-delimiters show-arrows="hover">
+            <v-carousel-item
+              v-for="i in 7"
+              :key="i"
+              :src="'/images/location/' + i + '.jpg'"
+              contain
+            ></v-carousel-item> </v-carousel
+        ></v-card>
       </v-col>
       <v-col cols="8">
         <v-card

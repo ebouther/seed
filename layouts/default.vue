@@ -12,8 +12,8 @@ const crumbs = computed(() => {
   return route.path
     .split("/")
     .filter((item) => item)
-    .map((item) => {
-      return { title: item, href: item, disabled: false }
+    .map((item, index) => {
+      return { title: item, href: item, disabled: index === 0 ? true : false }
     })
 })
 console.log("crumbs: ", crumbs.value)

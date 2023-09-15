@@ -20,7 +20,9 @@
           color="blue-lighten-3"
           height="400"
         >
-          <ContentDoc :path="'/pages/' + $i18n.locale + '/scientific_policy'" />
+          <ContentDoc
+            :path="'/pages/' + $i18n.locale.value + '/scientific_policy'"
+          />
         </v-card>
       </v-col>
       <v-col cols="12">
@@ -31,6 +33,12 @@
           :to="localePath('carousel')"
           link
         >
+          <PeopleDesktopItem
+            v-for="(people, index) in sab"
+            :key="index"
+            :item="people"
+            :index="index"
+          />
           Scientific advisory board
         </v-card>
       </v-col>
@@ -75,4 +83,10 @@
 import { useDisplay } from "vuetify"
 const { smAndUp } = useDisplay()
 const localePath = useLocalePath()
+const { $i18n } = useNuxtApp()
+console.log($i18n.locale.value)
+const { data: sab } = await useAsyncData("sab-list", () =>
+  queryContent("/sab/" + $i18n.locale.value).find()
+)
+console.log("featured: ", sab)
 </script>

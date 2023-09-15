@@ -1,4 +1,4 @@
 ---
 title: scientific_policy
 ---
-Here comes the scientific policy text. 
+Voilà le texte de politique scientifique

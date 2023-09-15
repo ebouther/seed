@@ -34,8 +34,13 @@
           :to="localePath('carousel')"
           link
         >
-          List of members</v-card
-        >
+          <h3>{{ $t("our-members") }}</h3>
+          <nuxt-img
+            height="400"
+            fit="contain"
+            src="/images/partners/partners.jpg"
+          ></nuxt-img
+        ></v-card>
       </v-col>
       <v-col cols="4" v-show="smAndUp">
         <v-card
