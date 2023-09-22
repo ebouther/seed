@@ -9,6 +9,11 @@ on:
     branches:
       - main
       - master
+      
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   ci:
