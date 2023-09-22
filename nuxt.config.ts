@@ -79,9 +79,9 @@ export default defineNuxtConfig({
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
-    experimental: {
+    /*   experimental: {
       clientDB: true,
-    },
+    }, */
   },
   image: {
     // https://image.nuxt.com/get-started/configuration
@@ -101,6 +101,33 @@ export default defineNuxtConfig({
       fallbackLocale: "en",
       useCookie: true,
       cookieKey: "i18n_redirected",
+    },
+    customRoutes: "config",
+    pages: {
+      "/about/institute": {
+        fr: "/a-propos/institut",
+      },
+      "/about/scientific_policy": {
+        fr: "/a-propos/politique-scientifique",
+      },
+      "/about/network": {
+        fr: "/a-propos/reseau",
+      },
+      "/activities/fellowships": {
+        fr: "/activites/residences",
+      },
+      "/activities/programs": {
+        fr: "/activites/programmes",
+      },
+      "/activities/events": {
+        fr: "/activites/evenements",
+      },
+      "/people/team": {
+        fr: "/equipe",
+      },
+      "/people/scientific-advisory-board": {
+        fr: "/conseil-scientifique",
+      },
     },
     // https://v8.i18n.nuxtjs.org/options/vue-i18n
   },

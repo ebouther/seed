@@ -7,6 +7,7 @@
 }
 </style>
 <script setup>
+const localePath = useLocalePath()
 const route = useRoute()
 const crumbs = computed(() => {
   return route.path
@@ -30,6 +31,16 @@ console.log(crumbs.value)
     <v-main>
       <v-container v-if="crumbs && crumbs.length">
         <v-breadcrumbs :items="crumbs" class="pl-0" link>
+          <template v-slot:prepend>
+            <v-btn
+              :to="localePath('/')"
+              size="small"
+              variant="text"
+              icon="mdi-home"
+            ></v-btn>
+            /
+          </template>
+
           <template v-slot:title="{ item }">
             {{ $t(item.title).toUpperCase() }}
           </template>

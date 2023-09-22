@@ -47,14 +47,18 @@ jobs:
       - name: Generate
         run: yarn run generate
 
-      - name: Run linter 👀
-        run: yarn lint
+      #  - name: Run linter 👀
+      #   run: yarn lint
 
       #      - name: Run tests 🧪
       #        run: yarn test
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: 🤫 Setting up AWS credentials
+        uses: "aws-actions/configure-aws-credentials@v1"
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{  secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy static site to S3 bucket
+        run: aws s3 sync ./public/ s3://dev-website-iea-paris --delete  --exclude ".*" --size-only

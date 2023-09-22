@@ -6,7 +6,7 @@
           class="d-flex align-center justify-center"
           color="grey-lighten-3"
           height="424"
-          :to="localePath('/activities/browse')"
+          :to="localePath('/activities/events/browse')"
           link
         >
           Overview of the upcoming events. Link to event browsing</v-card

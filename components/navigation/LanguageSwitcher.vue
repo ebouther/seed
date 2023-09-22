@@ -10,7 +10,10 @@
       <v-list-item
         v-for="locale in availableLocales"
         :key="locale.code"
-        @click="$i18n.setLocale(locale.code)"
+        @click="
+          $i18n.setLocale(locale.code) &&
+            $router.push(localePath($route.fullPath))
+        "
       >
         <v-list-item-title class="text-uppercase text-button">
           {{ locale.name.toLowerCase() }}

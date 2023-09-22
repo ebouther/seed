@@ -1,7 +1,7 @@
 <template>
-  <v-window v-model="data" show-arrows>
-    <v-window-item v-for="n in 5" :key="`card-${n}`">
-      <v-container>
+  <v-container>
+    <v-window v-model="data" show-arrows>
+      <v-window-item v-for="n in 5" :key="`card-${n}`">
         <v-row>
           <v-col cols="12">
             <v-card
@@ -16,7 +16,7 @@
               />
             </v-card>
           </v-col>
-          <v-col cols="4" v-if="smAndUp">
+          <v-col cols="4">
             <v-card
               class="d-flex align-center justify-center"
               color="red-lighten-3"
@@ -29,7 +29,7 @@
               />
             </v-card>
           </v-col>
-          <v-col cols="4" v-if="smAndUp">
+          <v-col cols="4">
             <v-card
               class="d-flex align-center justify-center"
               color="green-lighten-3"
@@ -44,7 +44,7 @@
               />
             </v-card>
           </v-col>
-          <v-col cols="4" v-if="smAndUp">
+          <v-col cols="4">
             <v-card
               class="d-flex align-center justify-center"
               color="pink-lighten-3"
@@ -59,9 +59,9 @@
             /></v-card>
           </v-col>
         </v-row>
-      </v-container>
-    </v-window-item>
-  </v-window>
+      </v-window-item>
+    </v-window>
+  </v-container>
 </template>
 
 <script lang="ts" setup>

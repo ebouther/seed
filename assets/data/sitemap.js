@@ -26,7 +26,7 @@ export default {
       dropdown: true,
       children: [
         { text: "team", path: "/people/team" },
-        { text: "sab", path: "/people/sab" },
+        { text: "sab", path: "/people/scientific-advisory-board" },
         { text: "fellows", path: "/people/fellows" },
         { text: "browse", path: "/people/browse" },
       ],

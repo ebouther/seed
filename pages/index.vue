@@ -22,9 +22,9 @@
           link
         >
           <ContentDoc
-            :path="'/pages/' + $i18n.locale + '/institute_presentation'"
+            :path="'/pages/' + $i18n.locale.value + '/institute_presentation'"
           />
-          Institute presentation</v-card
+          Institute presentation {{ $i18n.locale.value }}</v-card
         >
       </v-col>
       <v-col cols="12" sm="8">
@@ -74,9 +74,8 @@ import { useDisplay } from "vuetify"
 const { smAndUp } = useDisplay()
 const localePath = useLocalePath()
 
+const config = useAppConfig()
 const { locale } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-const drawer = ref(false)
 
 const { $i18n } = useNuxtApp()
 console.log("/" + $i18n.locale.value + "/carousel")
@@ -94,5 +93,4 @@ const { data: action } = await useAsyncData("actions", () =>
     .limit(1)
     .find()
 )
-console.log("action: ", action.value[0])
 </script>

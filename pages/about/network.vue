@@ -35,11 +35,12 @@
           link
         >
           <h3>{{ $t("our-members") }}</h3>
-          <nuxt-img
+          <NuxtImg
+            class="d-flex"
             height="400"
             fit="contain"
             src="/images/partners/partners.jpg"
-          ></nuxt-img
+          ></NuxtImg
         ></v-card>
       </v-col>
       <v-col cols="4" v-show="smAndUp">

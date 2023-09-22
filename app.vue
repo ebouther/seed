@@ -12,11 +12,13 @@
   </Transition>
 </template>
 <script lang="ts" setup>
+const { $i18n } = useNuxtApp()
+const config = useAppConfig()
 useHead({
   // as a string,
   // where `%s` is replaced with the title
   // of the current page
   title: "Welcome ",
-  titleTemplate: "%s - bT Boilerplate 2023",
+  titleTemplate: `%s - ${$i18n.t(config.name)}`,
 })
 </script>
