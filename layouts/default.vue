@@ -13,18 +13,23 @@ const crumbs = computed(() => {
     .split("/")
     .filter((item) => item)
     .map((item, index) => {
-      return { title: item, href: item, disabled: index === 0 ? true : false }
+      return {
+        title: item,
+        ...(index > 0 && { href: item }),
+        disabled: index === 0 ? true : false,
+        exact: true,
+      }
     })
 })
-console.log("crumbs: ", crumbs.value)
+console.log(crumbs.value)
 </script>
 
 <template>
   <v-app>
-    <TopBar />
+    <NavigationTopBar />
     <v-main>
       <v-container v-if="crumbs && crumbs.length">
-        <v-breadcrumbs :items="crumbs" class="pl-0">
+        <v-breadcrumbs :items="crumbs" class="pl-0" link>
           <template v-slot:title="{ item }">
             {{ $t(item.title).toUpperCase() }}
           </template>
@@ -42,6 +47,6 @@ console.log("crumbs: ", crumbs.value)
       </v-container>
       <slot />
     </v-main>
-    <Footer />
+    <NavigationFooter />
   </v-app>
 </template>

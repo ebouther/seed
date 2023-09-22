@@ -10,7 +10,7 @@
           link
         >
           CAROUSEL
-          <Carousel></Carousel
+          <HomeCarousel :featured="featured"></HomeCarousel
         ></v-card>
       </v-col>
       <v-col cols="12">
@@ -29,24 +29,17 @@
       </v-col>
       <v-col cols="12" sm="8">
         <v-card
-          class="d-flex align-center justify-center"
+          class="d-flex align-center justify-center flex-column"
           color="green-lighten-3"
-          height="250"
           :to="localePath('events')"
           link
-          >Upcoming Events</v-card
-        ></v-col
-      >
+        >
+          Upcoming Events
+          <EventsListContainer :events="events"></EventsListContainer> </v-card
+      ></v-col>
       <v-col cols="4" v-if="smAndUp">
-        <v-card
-          class="d-flex align-center justify-center"
-          color="red-lighten-3"
-          height="250"
-          :to="localePath('activities/fellowships')"
-          link
-          >Ads</v-card
-        ></v-col
-      >
+        <ActionsSmallContainer :action="action"></ActionsSmallContainer>
+      </v-col>
 
       <v-col cols="4" v-if="smAndUp">
         <v-card
@@ -76,7 +69,7 @@
   </v-container>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { useDisplay } from "vuetify"
 const { smAndUp } = useDisplay()
 const localePath = useLocalePath()
@@ -84,4 +77,22 @@ const localePath = useLocalePath()
 const { locale } = useI18n()
 const switchLocalePath = useSwitchLocalePath()
 const drawer = ref(false)
+
+const { $i18n } = useNuxtApp()
+console.log("/" + $i18n.locale.value + "/carousel")
+console.log($i18n.locale.value)
+const { data: featured } = await useAsyncData("featured-list", () =>
+  queryContent("/carousel/" + $i18n.locale.value).find()
+)
+const { data: events } = await useAsyncData("event-list", () =>
+  queryContent("/events/" + $i18n.locale.value)
+    .sort({ date: 1 })
+    .find()
+)
+const { data: action } = await useAsyncData("actions", () =>
+  queryContent("/actions/" + $i18n.locale.value)
+    .limit(1)
+    .find()
+)
+console.log("action: ", action.value[0])
 </script>

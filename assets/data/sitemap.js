@@ -8,7 +8,8 @@ export default {
         { text: "scientific_policy", path: "/about/scientific_policy" },
         { text: "network", path: "/about/network" },
       ],
-    },   {
+    },
+    {
       text: "activities",
       dropdown: true,
       children: [
@@ -17,10 +18,10 @@ export default {
         {
           text: "events",
           path: "/activities/events",
-       
         },
       ],
-    }, {
+    },
+    {
       text: "people",
       dropdown: true,
       children: [
@@ -29,14 +30,15 @@ export default {
         { text: "fellows", path: "/people/fellows" },
         { text: "browse", path: "/people/browse" },
       ],
-    },{
+    },
+    {
       text: "resources",
       path: "/resources",
-      openOnHover:true,
+      openOnHover: true,
       dropdown: true,
       children: [
-        { text: "articles", path: "/resources/articles" },
-        { text: "proceedings", path: "/resources/proceedings" },
+        { text: "publications", path: "/resources/publications" },
+        { text: "videos", path: "/resources/videos" },
         { text: "browse", path: "/resources/browse" },
       ],
     },

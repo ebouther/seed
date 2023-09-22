@@ -1,6 +1,7 @@
 import config from "./static.config"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: true,
   site: {
     url: "https://paris-iea.fr",
   },
@@ -71,22 +72,21 @@ export default defineNuxtConfig({
     "nuxt-simple-sitemap",
     "nuxt-link-checker",
     "nuxt-schema-org",
+    "@vite-pwa/nuxt",
   ],
   pinia: {
     autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
+    experimental: {
+      clientDB: true,
+    },
   },
   image: {
     // https://image.nuxt.com/get-started/configuration
   },
-  components: [
-    "~/components/navigation",
-    "~/components/home",
-    "~/components",
-    "~/components/people",
-  ],
+  components: true,
 
   i18n: {
     langDir: "translations/",
@@ -103,6 +103,10 @@ export default defineNuxtConfig({
       cookieKey: "i18n_redirected",
     },
     // https://v8.i18n.nuxtjs.org/options/vue-i18n
+  },
+  pwa: {
+    //https://vite-pwa-org.netlify.app/frameworks/nuxt.html
+    /* PWA options */
   },
   robots: {
     // https://nuxt.com/modules/robots#options

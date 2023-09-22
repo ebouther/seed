@@ -13,8 +13,8 @@
   "team": "Team",
   "sab": "Scientific Advisory Board",
   "browse": "Browse",
-  "articles": "Articles",
-  "proceedings": "Proceedings",
+  "publications": "Publications",
+  "videos": "Videos",
   "people": "People",
   "paris-ias": "PARIS IAS",
   "about-us": "About us",
@@ -41,5 +41,7 @@
   },
   "activities": "Activities",
   "check-this-out": "Check this out!",
-  "our-members": "Our members"
+  "our-members": "Our members",
+  "online": "Online",
+  "learn-more": "Learn More"
 }

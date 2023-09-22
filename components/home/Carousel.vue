@@ -21,11 +21,10 @@
   </v-carousel>
 </template>
 <script setup>
-const { $i18n } = useNuxtApp()
-console.log("/" + $i18n.locale.value + "/carousel")
-console.log($i18n.locale.value)
-const { data: featured } = await useAsyncData("featured-list", () =>
-  queryContent("/carousel/" + $i18n.locale.value).find()
-)
-console.log("featured: ", featured)
+const props = defineProps({
+  featured: {
+    type: Array,
+    required: true,
+  },
+})
 </script>

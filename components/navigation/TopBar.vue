@@ -12,7 +12,7 @@ const { smAndUp } = useDisplay()
   <!-- TOP BAR CONTAINER -->
   <v-app-bar>
     <!--  WEBSITE LOGO -->
-    <Logo></Logo>
+    <NavigationLogo></NavigationLogo>
     <v-app-bar-title class="align-start">
       <nuxt-link :to="localePath('/')" class="text-black">{{
         config.full_name
@@ -50,9 +50,9 @@ const { smAndUp } = useDisplay()
         </template>
         <v-divider vertical></v-divider>
         <!--  LANGUAGE SWITCHER -->
-        <LanguageSwitcher
+        <NavigationLanguageSwitcher
       /></template>
-      <MainMenu v-else />
+      <NavigationMainMenu v-else />
     </template>
   </v-app-bar>
 </template>
