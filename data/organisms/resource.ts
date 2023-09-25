@@ -1,5 +1,5 @@
 import { people } from "./people"
-import { image } from "./image"
+import { image } from "../molecules/image"
 
 export type article = {
   article_title: string

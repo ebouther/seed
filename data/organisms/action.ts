@@ -1,4 +1,4 @@
-import { image } from "./image"
+import { image } from "../molecules/image"
 
 export type action = {
   title: string

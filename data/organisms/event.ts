@@ -1,6 +1,6 @@
-import { address } from "./address"
-import { image } from "./image"
-import { eventSlot } from "./eventSlot"
+import { address } from "../atoms/address"
+import { image } from "../molecules/image"
+import { eventSlot } from "../atoms/eventSlot"
 
 export type event = {
   name: string

@@ -17,9 +17,9 @@ const crumbs = computed(() => {
       console.log("item: ", item)
       return {
         title: item,
-        ...(index > 0 && { href: item }),
+        ...(index > 0 && { href: item /* process.env.NODE_ENV === 'production' ? (config.url + "/" + item) : ('http//localhost:3000/' + item)  */}),
         disabled: index === 0 ? true : false,
-        exact: true,
+        exact: true
       }
     })
 })
@@ -30,16 +30,11 @@ console.log(crumbs.value)
   <v-app>
     <NavigationTopBar />
     <v-main>
-      {{ crumbs }}
+      
       <v-container v-if="crumbs && crumbs.length">
         <v-breadcrumbs :items="crumbs" class="pl-0" link>
           <template v-slot:prepend>
-            <v-btn
-              :to="localePath('/')"
-              size="small"
-              variant="text"
-              icon="mdi-home"
-            ></v-btn>
+            <v-btn :to="localePath('/')" size="small" variant="text" icon="mdi-home"></v-btn>
             /
           </template>
 
@@ -47,13 +42,10 @@ console.log(crumbs.value)
             {{ $t(item.title).toUpperCase() }}
           </template>
         </v-breadcrumbs>
-        <h1
-          v-if="
-            crumbs.slice(-1)[0] &&
-            crumbs.slice(-1)[0].title &&
-            crumbs.slice(-1)[0].title.length
-          "
-        >
+        <h1 v-if="crumbs.slice(-1)[0] &&
+          crumbs.slice(-1)[0].title &&
+          crumbs.slice(-1)[0].title.length
+          ">
           {{ $t(crumbs.slice(-1)[0].title) }}
         </h1>
         <v-divider></v-divider>

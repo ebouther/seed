@@ -1,6 +1,6 @@
-import { image } from "./image"
+import { image } from "../molecules/image"
 
-export type featured = {
+export type fellowship = {
   title: string
   description: string
   picture: image

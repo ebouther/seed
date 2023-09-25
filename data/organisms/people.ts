@@ -1,6 +1,6 @@
-import { affiliation } from "./affiliation"
-import { image } from "./image"
-import { socials } from "./socials"
+import { affiliation } from "../molecules/affiliation"
+import { image } from "../molecules/image"
+import { socials } from "../socials"
 
 export type people = {
   firstname: string

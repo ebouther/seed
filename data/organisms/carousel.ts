@@ -1,6 +1,6 @@
-import { image } from "./image"
+import { image } from "../molecules/image"
 
-export type fellowship = {
+export type carousel = {
   title: string
   description: string
   picture: image

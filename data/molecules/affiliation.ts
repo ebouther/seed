@@ -1,5 +1,5 @@
 import { image } from "./image"
-import { address } from "./address"
+import { address } from "../atoms/address"
 
 export type affiliation = {
   name: string
