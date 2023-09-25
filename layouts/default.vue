@@ -14,6 +14,7 @@ const crumbs = computed(() => {
     .split("/")
     .filter((item) => item)
     .map((item, index) => {
+      console.log("item: ", item)
       return {
         title: item,
         ...(index > 0 && { href: item }),
@@ -29,6 +30,7 @@ console.log(crumbs.value)
   <v-app>
     <NavigationTopBar />
     <v-main>
+      {{ crumbs }}
       <v-container v-if="crumbs && crumbs.length">
         <v-breadcrumbs :items="crumbs" class="pl-0" link>
           <template v-slot:prepend>
