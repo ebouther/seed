@@ -1,4 +1,4 @@
-import { image } from "../molecules/image"
+import { image } from "./image"
 
 export type carousel = {
   title: string

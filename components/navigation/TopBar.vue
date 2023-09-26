@@ -30,7 +30,7 @@ const { smAndUp } = useDisplay()
               </v-btn>
             </template>
             <v-list>
-              <v-list-item :active="$route.path === " :to="localePath(child.path)" v-for="(child, index) in link.children"
+              <v-list-item :active="$route.fullPath === localePath(child.path)" :to="localePath(child.path)" v-for="(child, index) in link.children"
                 :key="index">
                 <v-list-item-title>{{ $t(child.text) }}</v-list-item-title>
               </v-list-item>

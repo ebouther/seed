@@ -38,9 +38,9 @@ export default {
       openOnHover: true,
       dropdown: true,
       children: [
-        { text: "publications", path: "/resources#publications" },
-        { text: "videos", path: "/resources#videos" },
-        { text: "browse", path: "/resources#browse" },
+        { text: "publications", path: "/resources?categories=[\"publications\"]" },
+        { text: "videos", path: "/resources?categories=[\"videos\"]" },
+        { text: "browse", path: "/resources" },
       ],
     },
   ],

@@ -2,6 +2,19 @@
     <v-container>
       <v-row>
         <v-col cols="12">
+          <v-expansion-panels v-model="JSON.parse($route.query.categories)[0]"
+          v-if="$route.query && $route.query.categories && $route.query.categories.length > 1 ">
+          <v-expansion-panel value="videos">
+            <v-expansion-panel-text>
+              <ContentDoc :path="'/pages/' + $i18n.locale + '/resources_videos'" />
+            </v-expansion-panel-text>
+          </v-expansion-panel>
+          <v-expansion-panel value="publications">
+            <v-expansion-panel-text>
+              <ContentDoc :path="'/pages/' + $i18n.locale + '/resources_publications'" />
+            </v-expansion-panel-text>
+          </v-expansion-panel>
+        </v-expansion-panels>
           <v-card
             class="d-flex align-center justify-center"
             color="grey-lighten-3"
@@ -16,7 +29,7 @@
     </v-container>
   </template>
   
-  <script lang="ts" setup>
+  <script setup>
   import { useDisplay } from "vuetify"
   const { smAndUp } = useDisplay()
   const localePath = useLocalePath()

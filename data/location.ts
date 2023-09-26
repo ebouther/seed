@@ -1,4 +1,4 @@
-export type address = {
+export type location = {
   name: string
   street: string
   city: string

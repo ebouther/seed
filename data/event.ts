@@ -1,5 +1,5 @@
 import { address } from "../atoms/address"
-import { image } from "../molecules/image"
+import { image } from "./image"
 import { eventSlot } from "../atoms/eventSlot"
 
 export type event = {
