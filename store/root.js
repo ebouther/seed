@@ -33,7 +33,7 @@ export const useRootStore = defineStore("rootStore", {
     ...modulesState,
   }),
 
-  /* actions: {
+  actions: {
     save(type) {
       try {
         $
@@ -150,38 +150,44 @@ export const useRootStore = defineStore("rootStore", {
       }
     },
     addFormItem({ key, type, level = null, store = null, defaults = null }) {
-      level = level ?? [this[type].form[key]]
-      store = store ?? this[type].form
-      if(!defaults) defaults = JSON.parse(this[type]._defaults)
-      console.log('defaults: ', defaults);
-      console.log(`addFormItem 
-      key: ${key}
-      type: ${type} 
-      level: ${level}`)
-// if level = 1 this is a primitive
-      if (level.length === 1) {
-        const defautlValue = defaults[level[0]][0]
-        console.log('defautlValue: ', defautlValue);
-        store[key].push(defautlValue)
-      } else if (level.length > 1) {
-        const isArray = typeof level[0] === "number"
-        //guard against undef keys
-        if (store[level[0]] === undefined) {
-          if (isArray) {
-            store[level[0]] = []
-          } else {
-            // if the key is not a number, it is an object (if it was a primitive, level.length would be 1)
-            store[level[0]] = {}
+      try {
+        level = level ?? [this[type].form[key]]
+        store = store ?? this[type].form
+        if(!defaults) defaults = JSON.parse(this[type]._defaults)
+        console.log('defaults: ', defaults);
+        console.log(`addFormItem 
+        key: ${key}
+        type: ${type} 
+        level: ${level}`)
+  // if level = 1 this is a primitive
+        if (level.length === 1) {
+          const defautlValue = defaults[level[0]][0]
+          console.log('defautlValue: ', defautlValue);
+          store[key].push(defautlValue)
+        } else if (level.length > 1) {
+          const isArray = typeof level[0] === "number"
+          //guard against undef keys
+          if (store[level[0]] === undefined) {
+            if (isArray) {
+              store[level[0]] = []
+            } else {
+              // if the key is not a number, it is an object (if it was a primitive, level.length would be 1)
+              store[level[0]] = {}
+            }
           }
+          return this.addFormItem({
+            key,
+            level: level.slice(1),
+            type,
+            store: store[level[0]],
+            defaults: defaults[level[0]]
+          })
         }
-        return this.addFormItem({
-          key,
-          level: level.slice(1),
-          type,
-          store: store[level[0]],
-          defaults: defaults[level[0]]
-        })
+      } catch (error) {
+        console.log('error: ', error);
+        
       }
+     
     },
     loadRouteQuery(type) {
       const { currentRoute } = useRouter()
@@ -518,7 +524,7 @@ export const useRootStore = defineStore("rootStore", {
           query,
         })
       }
-
+ */
       // fetch the item categories
 
       this.setFiltersCount(type)
@@ -532,7 +538,7 @@ export const useRootStore = defineStore("rootStore", {
       })
       this.setLoading(false)
     },
-  }, */
+  },
 })
 // fetch the item categories
 /*    
