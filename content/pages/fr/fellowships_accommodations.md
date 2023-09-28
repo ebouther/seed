@@ -2,4 +2,4 @@
 title: Fellowship accommodations
 page: 'home'
 ---
-THis is a text to present the fellows accommodations
+Texte FR pour présenter les éléments fournis aux fellows

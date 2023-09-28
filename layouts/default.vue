@@ -30,9 +30,8 @@ console.log(crumbs.value)
   <v-app>
     <NavigationTopBar />
     <v-main>
-      
       <v-container v-if="crumbs && crumbs.length">
-        <v-breadcrumbs :items="crumbs" class="pl-0" link>
+      <v-breadcrumbs :items="crumbs" class="pl-0" link>
           <template v-slot:prepend>
             <v-btn :to="localePath('/')" size="small" variant="text" icon="mdi-home"></v-btn>
             /

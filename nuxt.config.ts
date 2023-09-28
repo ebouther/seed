@@ -1,7 +1,8 @@
 import config from "./static.config"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
+  target: "static",
+  ssr: false,
   site: {
     url: "https://paris-iea.fr",
   },
@@ -78,10 +79,11 @@ export default defineNuxtConfig({
     autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
   },
   content: {
+    documentDriven: true,
     // https://content.nuxtjs.org/api/configuration
-    /*   experimental: {
+     experimental: {
       clientDB: true,
-    }, */
+    }, 
   },
   image: {
     // https://image.nuxt.com/get-started/configuration

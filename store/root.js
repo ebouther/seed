@@ -17,12 +17,12 @@ if (process.server) {
   dir.closeSync()
     console.log('types: ', types); */
 }
-  await Promise.all(
+/*   await Promise.all(
   [].map(async (type) => {
     console.log("type: ", type)
     modulesState[type] = await createModule(type)
   })
-)
+) */
 /* const githubApi = new api(config.modules.github) */
 
 export const useRootStore = defineStore("rootStore", {
