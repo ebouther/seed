@@ -2,4 +2,4 @@
 title: moto
 page: 'institute'
 ---
-It's all about collective intelligence
+Activating collective intelligence with the best in research

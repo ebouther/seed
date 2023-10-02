@@ -12,3 +12,9 @@ export type file = {
   updatedAt: string
   id: string
 }
+// Compare this snippet from data/affiliation.ts:
+// import { image } from "./image"
+// import { address } from "./address"
+//
+// export type affiliation = {
+//   name: string

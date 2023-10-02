@@ -1,8 +1,7 @@
 import config from "./static.config"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  target: "static",
-  ssr: false,
+  ssr: true,
   site: {
     url: "https://paris-iea.fr",
   },
@@ -63,7 +62,7 @@ export default defineNuxtConfig({
   modules: [
     "@pinia/nuxt",
     "@nuxt/content",
-    "@nuxtjs/html-validator", // https://nuxt.com/modules/html-validator
+    /* "@nuxtjs/html-validator", */ // https://nuxt.com/modules/html-validator
     "nuxt-csurf", // Cross-Site Request Forgery (CSRF) prevention (https://nuxt.com/modules/csurf).
     "@nuxt/image",
     "@nuxtjs/i18n",
@@ -74,16 +73,16 @@ export default defineNuxtConfig({
     "nuxt-link-checker",
     "nuxt-schema-org",
     "@vite-pwa/nuxt",
+    "@nuxtjs/apollo",
   ],
   pinia: {
     autoImports: ["defineStore", ["defineStore", "definePiniaStore"]],
   },
   content: {
-    documentDriven: true,
     // https://content.nuxtjs.org/api/configuration
-     experimental: {
+    experimental: {
       clientDB: true,
-    }, 
+    },
   },
   image: {
     // https://image.nuxt.com/get-started/configuration
@@ -141,12 +140,15 @@ export default defineNuxtConfig({
     // https://nuxt.com/modules/robots#options
   },
   googleFonts: {
+    // https://google-fonts.nuxtjs.org/getting-started/options
     families: config.modules.fonts.families,
     preconnect: true,
     prefetch: true,
     display: "swap",
-
-    // https://google-fonts.nuxtjs.org/getting-started/options
+  },
+  apollo: {
+    // https://apollo.nuxtjs.org/getting-started/configuration
+    clients: { default: { httpEndpoint: "https://api.spacex.land/graphql" } },
   },
   htmlValidator: {
     usePrettier: false,

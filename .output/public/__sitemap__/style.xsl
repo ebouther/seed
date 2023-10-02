@@ -107,7 +107,7 @@
         <div style="grid-template-columns: 1fr 1fr; display: grid; margin: 3rem;">
             <div>
              <div id="content">
-          <h1 class="text-2xl mb-5">seed XML Sitemap</h1>
+          <h1 class="text-2xl mb-5">template XML Sitemap</h1>
           
           <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &gt; 0">
             <p class="expl" style="margin-bottom: 1rem;">

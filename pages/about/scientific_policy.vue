@@ -7,11 +7,11 @@
           color="yellow-lighten-3"
           height="400"
         >
-          <nuxt-img
+          <v-img
             height="400"
             fit="contain"
             src="/images/Paulius_Yamin.jpg"
-          ></nuxt-img
+          ></v-img
         ></v-card>
       </v-col>
       <v-col cols="12" sm="8">
@@ -30,7 +30,6 @@
           class="d-flex align-center justify-center"
           color="orange-lighten-3"
           height="424"
-          :to="localePath('carousel')"
           link
         >
           <PeopleDesktopItem
@@ -58,7 +57,6 @@
           class="d-flex align-center justify-center"
           color="green-lighten-3"
           height="400"
-          :to="localePath('carousel')"
           link
         >
           Link to fellows (?)</v-card
@@ -69,7 +67,6 @@
           class="d-flex align-center justify-center"
           color="pink-lighten-3"
           height="400"
-          :to="localePath('carousel')"
           link
         >
           Link to proceedings (?)</v-card
@@ -88,5 +85,4 @@ console.log($i18n.locale.value)
 const { data: sab } = await useAsyncData("sab-list", () =>
   queryContent("/sab/" + $i18n.locale.value).find()
 )
-console.log("featured: ", sab)
 </script>

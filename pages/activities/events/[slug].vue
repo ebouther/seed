@@ -11,7 +11,7 @@
           </v-card-title>
           <v-card-text>
             <ContentDoc
-              :path="'/event/' + $i18n.locale + '/' + $route.params.slug"
+              :path="'/event/' + $i18n.locale.value + '/' + $route.params.slug"
             />
           </v-card-text>
         </v-card>
@@ -31,6 +31,5 @@ const { data: event } = await useAsyncData("event", () =>
     "/event/" + $i18n.locale.value + "/" + route.params.slug
   ).findOne()
 )
-console.log('event: ', event);
-
+console.log("event: ", event)
 </script>

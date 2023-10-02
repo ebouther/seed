@@ -17,11 +17,11 @@
           color="grey-lighten-3"
           height="400"
         >
-          <nuxt-img
+          <v-img
             height="400"
             fit="contain"
             src="/images/sandrine_morvand.jpg"
-          ></nuxt-img
+          ></v-img
         ></v-card>
       </v-col>
     </v-row>

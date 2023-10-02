@@ -6,26 +6,21 @@
           class="d-flex align-center justify-center flex-column"
           color="grey-lighten-3"
           height="424"
-          :to="localePath('carousel')"
           link
         >
-          CAROUSEL
           <HomeCarousel :featured="featured"></HomeCarousel
         ></v-card>
       </v-col>
       <v-col cols="12">
         <v-card
-          class="d-flex align-center justify-center"
-          color="purple-lighten-3"
-          height="200"
+          flat
+          class="d-flex align-center justify-center pa-6"
           :to="localePath('/about/institute')"
           link
         >
           <ContentDoc
             :path="'/pages/' + $i18n.locale.value + '/institute_presentation'"
-          />
-          Institute presentation {{ $i18n.locale.value }}</v-card
-        >
+        /></v-card>
       </v-col>
       <v-col cols="12" sm="8">
         <v-card
@@ -78,8 +73,6 @@ const config = useAppConfig()
 const { locale } = useI18n()
 
 const { $i18n } = useNuxtApp()
-console.log("/" + $i18n.locale.value + "/carousel")
-console.log($i18n.locale.value)
 const { data: featured } = await useAsyncData("featured-list", () =>
   queryContent("/carousel/" + $i18n.locale.value).find()
 )

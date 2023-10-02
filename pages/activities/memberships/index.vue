@@ -6,7 +6,6 @@
           class="d-flex align-center justify-center"
           color="grey-lighten-3"
           height="424"
-          :to="localePath('carousel')"
           link
         >
           <ContentDoc

@@ -8,11 +8,11 @@
           height="400"
         >
           Picture
-          <nuxt-img
+          <v-img
             height="400"
             fit="contain"
             src="/images/lahlou_saadi.jpg"
-          ></nuxt-img
+          ></v-img
         ></v-card>
       </v-col>
 
@@ -22,8 +22,8 @@
           color="blue-lighten-3"
           height="400"
         >
-          Moto</v-card
-        >
+          <HomeMoto></HomeMoto>
+        </v-card>
       </v-col>
       <v-col cols="12">
         <v-card
@@ -37,13 +37,13 @@
         </v-card>
       </v-col>
       <v-col cols="4">
-        <v-card class="d-flex align-center justify-center" height="400">
+        <v-card class="d-flex align-center justify-center" flat height="400">
           <v-carousel cycle hide-delimiters show-arrows="hover">
             <v-carousel-item
               v-for="i in 7"
               :key="i"
               :src="'/images/location/' + i + '.jpg'"
-              contain
+              cover
             ></v-carousel-item> </v-carousel
         ></v-card>
       </v-col>
@@ -83,7 +83,7 @@
   </v-container>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { useDisplay } from "vuetify"
 const { smAndUp } = useDisplay()
 const localePath = useLocalePath()

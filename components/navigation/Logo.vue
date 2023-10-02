@@ -1,7 +1,7 @@
 <template>
   <v-app-bar-nav-icon>
     <nuxt-link :to="localePath('/')" :class="{ scrolled: rootStore.scrolled }">
-      <nuxt-img
+      <v-img
         contain
         height="50"
         width="50"
@@ -9,7 +9,7 @@
         format="webp"
         preload
         :src="appConfig.logo"
-      ></nuxt-img> </nuxt-link
+      ></v-img> </nuxt-link
   ></v-app-bar-nav-icon>
 </template>
 <script setup lang="ts">

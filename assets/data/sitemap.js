@@ -25,10 +25,13 @@ export default {
       text: "people",
       dropdown: true,
       children: [
-        { text: "team", path: "/people?categories=[\"team\"]" },
-        { text: "sab", path: "/people?categories=[\"scientific-advisory-board\"]" },
-        { text: "fellows", path: "/people?categories=[\"fellows\"]" },
-        { text: "board", path: "/people?categories=[\"board-of-directors\"]" },
+        { text: "fellows", path: '/people?categories=["fellows"]' },
+        { text: "team", path: '/people?categories=["team"]' },
+        {
+          text: "sab",
+          path: '/people?categories=["scientific-advisory-board"]',
+        },
+        { text: "board", path: '/people?categories=["board-of-directors"]' },
         { text: "browse", path: "/people" },
       ],
     },
@@ -38,8 +41,11 @@ export default {
       openOnHover: true,
       dropdown: true,
       children: [
-        { text: "publications", path: "/resources?categories=[\"publications\"]" },
-        { text: "videos", path: "/resources?categories=[\"videos\"]" },
+        {
+          text: "publications",
+          path: '/resources?categories=["publications"]',
+        },
+        { text: "videos", path: '/resources?categories=["videos"]' },
         { text: "browse", path: "/resources" },
       ],
     },

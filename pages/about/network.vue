@@ -7,11 +7,11 @@
           color="grey-lighten-3"
           height="400"
         >
-          <nuxt-img
+          <v-img
             height="400"
             fit="contain"
             src="/images/durandcecile.jpg"
-          ></nuxt-img
+          ></v-img
         ></v-card>
       </v-col>
       <v-col cols="12" sm="9">
@@ -19,10 +19,9 @@
           class="d-flex align-center justify-center"
           color="grey-lighten-3"
           height="250"
-          :to="localePath('carousel')"
           link
         >
-          <ContentDoc :path="'/pages/' + $i18n.locale + '/network'" />
+          <ContentDoc :path="'/pages/' + $i18n.locale.value + '/network'" />
         </v-card>
       </v-col>
 
@@ -31,16 +30,15 @@
           class="d-flex align-center justify-center"
           color="cyan-lighten-3"
           height="400"
-          :to="localePath('carousel')"
           link
         >
           <h3>{{ $t("our-members") }}</h3>
-          <NuxtImg
+          <v-img
             class="d-flex"
             height="400"
             fit="contain"
             src="/images/partners/partners.jpg"
-          ></NuxtImg
+          ></v-img
         ></v-card>
       </v-col>
       <v-col cols="4" v-show="smAndUp">
@@ -50,8 +48,10 @@
           height="400"
           :to="localePath('activities/membership')"
           link
-          >Ad/call to action membership</v-card
-        ></v-col
+        >
+          <ActionsSmallContainer
+            :action="action"
+          ></ActionsSmallContainer> </v-card></v-col
       ><v-col cols="12" sm="6">
         <v-card
           class="d-flex align-center justify-center"
@@ -60,7 +60,9 @@
           :to="localePath('/support')"
           link
         >
-          <ContentDoc :path="'/pages/' + $i18n.locale + '/partners'" /> </v-card
+          <ContentDoc
+            :path="'/pages/' + $i18n.locale.value + '/partners'"
+          /> </v-card
       ></v-col>
       <v-col cols="12" sm="6">
         <v-card
@@ -87,9 +89,11 @@
           height="400"
           :to="localePath('/support')"
           link
-          >Ad/call to action support us</v-card
-        ></v-col
-      >
+        >
+          <ActionsSmallContainer
+            :action="action"
+          ></ActionsSmallContainer></v-card
+      ></v-col>
     </v-row>
   </v-container>
 </template>
@@ -98,4 +102,10 @@
 import { useDisplay } from "vuetify"
 const { smAndUp } = useDisplay()
 const localePath = useLocalePath()
+const { $i18n } = useNuxtApp()
+const { data: action } = await useAsyncData("actions", () =>
+  queryContent("/actions/" + $i18n.locale.value)
+    .limit(1)
+    .find()
+)
 </script>
