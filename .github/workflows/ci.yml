@@ -34,15 +34,17 @@ jobs:
         with:
           terraform_version: 1.5.6
 
-      - name: 🤫 Setting up AWS credentials
-        uses: "aws-actions/configure-aws-credentials@v4"
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
-          aws-secret-access-key: ${{  secrets.AWS_SECRET_ACCESS_KEY_DEV }}
-          aws-region: eu-west-3
+      - name: Setup AWS credentials [dev]
+        run: |
+          aws configure set region ${{ env.REGION }} --profile ${{ env.PROFILE_NAME }}
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID_DEV }} --profile ${{ env.PROFILE_NAME }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }} --profile ${{ env.PROFILE_NAME }}
+        env:
+          PROFILE_NAME: dev
+          REGION: eu-west-3
 
       - name: "Terraform Apply"
-        run: yarn deploy:infra
+        run: AWS_PROFILE=dev yarn deploy:infra
 
   frontend:
     needs: [infra]
