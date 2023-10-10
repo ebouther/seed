@@ -42,7 +42,7 @@ jobs:
           aws-region: eu-west-3
 
       - name: "Terraform Apply"
-        run: cd ./infra && terraform apply
+        run: yarn deploy:infra
 
   frontend:
     needs: [infra]

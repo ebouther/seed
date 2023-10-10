@@ -11,7 +11,7 @@
     "generate": "nuxt generate --host",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy:infra": "cd ./infra && terraform apply"
+    "deploy:infra": "cd ./infra && terraform init && terraform apply"
   },
   "devDependencies": {
     "@nuxt/content": "^2.8.2",
