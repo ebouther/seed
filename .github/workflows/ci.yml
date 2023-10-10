@@ -16,7 +16,35 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  ci:
+  infra:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [18]
+
+    steps:
+      - name: "Setup Terraform"
+        if: github.event.inputs.forceInfraJob != '' || steps.skip-infra.outputs.skip != 'true'
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.1.7
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
+      - name: 🤫 Setting up AWS credentials
+        uses: "aws-actions/configure-aws-credentials@v4"
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
+          aws-secret-access-key: ${{  secrets.AWS_SECRET_ACCESS_KEY_DEV }}
+          aws-region: eu-west-3
+
+      - name: "Terraform Apply"
+        run: terraform apply
+
+  frontend:
+    needs: [infra]
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -66,7 +94,7 @@ jobs:
           aws-region: eu-west-3
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync $DIST_DIR $S3_BUCKET --delete  --exclude ".*" --size-only --quiet
+        run: aws s3 sync $DIST_DIR $S3_BUCKET --delete  --exclude ".*" --size-only
         env:
           DIST_DIR: .output/public/
           S3_BUCKET: s3://dev-website-iea-paris
