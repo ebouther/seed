@@ -2,7 +2,7 @@
 title: institute location description
 page: institute
 ---
-## **Décloisonner la recherche**
+## Décloisonner la recherche
 
 L’Institut développe des interactions avec les écosystèmes locaux et globaux de la recherche, de la société civile et du monde socio-économique, aﬁn d’accroître l’impact des travaux scientiﬁques en sciences humaines au-delà des frontières disciplinaires et sectorielles. 
 
