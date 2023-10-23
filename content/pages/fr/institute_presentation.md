@@ -1,6 +1,6 @@
 ---
 title: presentation
-page: 'home'
+page: home
 ---
 # Activateur d'intelligence collective avec le meilleur de la recherche
 
