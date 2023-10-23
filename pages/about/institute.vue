@@ -79,6 +79,26 @@
           Network overview</v-card
         >
       </v-col>
+      <v-col cols="4">
+        <v-card class="d-flex align-center justify-center" flat height="400">
+          <v-carousel cycle hide-delimiters show-arrows="hover">
+            <v-carousel-item
+              v-for="i in 7"
+              :key="i"
+              :src="'/images/location/' + i + '.jpg'"
+              cover
+            ></v-carousel-item> </v-carousel
+        ></v-card>
+      </v-col>
+      <v-col cols="8">
+        <v-card
+          class="d-flex align-center justify-center"
+          color="green-darken-3"
+          height="400"
+        >
+          <ContentDoc :path="'/pages/' + $i18n.locale + '/institute_history'" />
+        </v-card>
+      </v-col>
     </v-row>
   </v-container>
 </template>
