@@ -88,3 +88,26 @@ Treasurer: Isabelle STRAUSS-KAHN
 * Barbara CASSIN, Académie française
 * Saskia SASSEN, Professor at Columbia University
 * Isabelle STRAUSS-KAHN, World Bank
+
+
+
+# Scientific Advisory Board
+
+The members of the Scientific Advisory Board are researchers that are recognised on an international level and are familiar with the research of institutes for advanced study around the world. The Scientific Advisory Board evaluates applications and gives its opinion on the programmes and general directions of Paris IAS.
+
+**Members of the Scientific Advisory Board**
+
+* President: Alena LEDENEVA, University College London (Politics and Society)
+* Salvatore Maria AGLIOTI, Spienza University of Rome (Cognitive Neuroscience)
+* Vincent DUBOIS , University of Strasbourg (Sociology, Political Science)
+* Ulrike FELT, University of Vienna (Science and Technology Studies)
+* Anne GARRETA, Duke University (Literature, Gender Studies, Cultural Studies, Critical Theory)
+* Simon GOLDHILL, Cambridge University (Classics; Culture and Literature of Ancient Greece)
+* Tamar HERZOG, Harvard University (History, Legal History)
+* Martin STOKHOF, University of Amsterdam (Philosophy, Logic)
+
+
+
+# Director
+
+Saadi LAHLOU, professor of social psychology at the London School of Economics was appointed Director of the Paris IAS on September 2018.

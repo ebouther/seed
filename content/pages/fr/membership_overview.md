@@ -98,3 +98,28 @@ Trésorière : Isabelle STRAUSS-KAHN, Banque Mondiale
 • Saskia SASSEN, Professeure à l'Université Columbia, New York.
 
 • Isabelle STRAUSS-KAHN, Banque mondiale
+
+
+
+# Le Conseil scientifique
+
+
+
+Les membres du Conseil scientifique sont des chercheurs internationalement reconnus et au fait des travaux des IEA dans le monde. Le Conseil scientifique procède à l'évaluation des dossiers de candidature et donne son avis sur les programmes et orientations générales de l'IEA.
+
+**Sont membres du Conseil scientifique :**
+
+* Présidente : Alena LEDENEVA, University College de Londres (Politique et société)
+* Salvatore Maria AGLIOTI, Spienza Università de Rome (Neurosciences cognitives)
+* Vincent DUBOIS, Université de Strasbourg (Sociologie et Science politique)
+* Ulrike FELT, Université de Vienne (Etudes des sciences et technologies)
+* Anne GARRETA, Duke University (Littératures, Genre, Etudes culturelles, Théorie critique)
+* Simon GOLDHILL, Cambridge University (Études classiques; Culture et littérature de la Grèce antique)
+* Tamar HERZOG, Harvard University (Histoire, Histoire du Droit)
+* Martin STOKHOF, Université d’Amsterdam (Philosophie, Logique)
+
+
+
+# La direction
+
+Saadi LAHLOU, professeur de psychologie sociale à la London School of Economics, est directeur de l'IEA de Paris depuis septembre 2018.
