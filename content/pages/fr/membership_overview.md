@@ -8,9 +8,13 @@ L'IEA de Paris est une association loi 1901 créée le 1er janvier 2011, dont la
 
 L’Institut est gouverné par deux instances, l’Assemblée générale et le Conseil d’administration.
 
+
+
 ## L’Assemblée générale
 
 L’Assemblée générale se compose de trois collèges, le collège des donateurs, le collège des institutions scientifiques, et celui des personnalités qualifiées.
+
+
 
 ### Collège des donateurs et fondateurs
 
@@ -21,6 +25,8 @@ L’Assemblée générale se compose de trois collèges, le collège des donateu
 Conseil régional d’Île-de-France, représenté par Marie-Eve PERRU
 
 Fondation Maison des sciences de l’homme, représentée par Hélène VELASCO-GRACIET
+
+
 
 ### Collège des institutions scientifiques
 
@@ -37,6 +43,8 @@ Fondation Maison des sciences de l’homme, représentée par Hélène VELASCO-G
 * Université Gustave Eiffel
 * Université Paris Nanterre
 * Université Paris-Saclay
+
+
 
 #### Collège des personnalités qualifiées
 
@@ -63,7 +71,9 @@ Vice-Président : Hubert BOST, Directeur d'études à l'EPHE-PSL
 
 Trésorière : Isabelle STRAUSS-KAHN, Banque Mondiale
 
-### Collège des Membres Fondateurs 
+
+
+### Collège des Membres Fondateurs
 
 • Ariel WEIL, Maire de Paris Centre
 
@@ -71,13 +81,17 @@ Trésorière : Isabelle STRAUSS-KAHN, Banque Mondiale
 
 • Marie-Eve PERRU, Conseil régional d'Ile-de-France
 
+
+
 ### Représentants du Collège des institutions scientifiques
 
 • Nathalie DRACH-TEMAM, Présidente de Sorbonne Université
 
 • Hubert BOST, Directeur d'études à l’École Pratique des Hautes Études
 
-Personnalités qualifiées
+
+
+### Personnalités qualifiées
 
 • Barbara CASSIN, Académie française
 
