@@ -2,17 +2,17 @@
 title: membership_overview
 page: network
 ---
-## Gouvernance
+# Gouvernance
 
-L'IEA de Paris est une association loi 1901 créée le 1er janvier 2011, dont la présidente est Bettina Laville, conseillère d’État honoraire, fondatrice et présidente d'honneur du Comité 21.[](/people/fellows)
+L'IEA de Paris est une association loi 1901 créée le 1er janvier 2011, dont la présidente est Bettina Laville, Conseillère d’État honoraire, fondatrice et présidente d'honneur du Comité 21.[](/people/fellows)
 
 L’Institut est gouverné par deux instances, l’Assemblée générale et le Conseil d’administration.
 
-### L’Assemblée générale
+## L’Assemblée générale
 
 L’Assemblée générale se compose de trois collèges, le collège des donateurs, le collège des institutions scientifiques, et celui des personnalités qualifiées.
 
-#### Collège des donateurs et fondateurs
+### Collège des donateurs et fondateurs
 
  Réseau Français des Instituts d’études avancées, représenté par Olivier BOUIN
 
@@ -22,67 +22,40 @@ Conseil régional d’Île-de-France, représenté par Marie-Eve PERRU
 
 Fondation Maison des sciences de l’homme, représentée par Hélène VELASCO-GRACIET
 
+### Collège des institutions scientifiques
 
-
-#### Collège des institutions scientifiques
-
-• CNRS
-
+* CNRS
 * École des Hautes Études en Sciences Sociales
-
-• École normale supérieure - PSL
-
-• École Pratique des Hautes Etudes - PSL
-
-• Fondation Maison des sciences de l'homme
-
-• Inalco
-
-• Sorbonne Université
-
-Université Paris I Panthéon Sorbonne
-
-• Université Paris 3 Sorbonne Nouvelle
-
-• Université Paris Cité
-
-• Université Gustave Eiffel
-
-• Université Paris Nanterre
-
-• Université Paris-Saclay
+* École normale supérieure - PSL
+* École Pratique des Hautes Etudes - PSL
+* Fondation Maison des sciences de l'homme
+* Inalco
+* Sorbonne Université
+* Université Paris I Panthéon Sorbonne
+* Université Paris 3 Sorbonne Nouvelle
+* Université Paris Cité
+* Université Gustave Eiffel
+* Université Paris Nanterre
+* Université Paris-Saclay
 
 #### Collège des personnalités qualifiées
 
-
-
-\- Barbara CASSIN, Académie française
-
-– 	 Bettina LAVILLE, conseillère d’État honoraire
-
-– 	 José-Alain SAHEL, professeur  à l’Université Pierre et Marie Curie, University College London
-
-– 	 Saskia SASSEN, professeure 
-
-à l’Université Columbia, New York
-
-– 	 Dominique SCHNAPPER, directrice d’études à l’EHESS
-
-– 	 Isabelle STRAUSS-KAHN, ancienne Lead Financial Officer à la Banque mondiale
-
-– 	 Björn WITTROCK, 
-
-Université d’Uppsala, Swedish Collegium for Advanced Study
+* Barbara CASSIN, Académie française
+* Bettina LAVILLE, conseillère d’État honoraire
+* José-Alain SAHEL, professeur  à l’Université Pierre et Marie Curie, University College London
+* Saskia SASSEN, professeure à l’Université Columbia, New York
+* Dominique SCHNAPPER, directrice d’études à l’EHESS
+* Isabelle STRAUSS-KAHN, ancienne Lead Financial Officer à la Banque mondiale
+* Björn WITTROCK, 
+* Université d’Uppsala, Swedish Collegium for Advanced Study
 
 
 
-Le Conseil d’administration
+## Le Conseil d’administration
 
+Le Conseil d’administration est une formation plus réduite, qui réunit le collège des membres fondateurs, deux représentants du collège des institutions scientifiques ainsi que six personnalités qualifiées. 
 
-
-Le Conseil d’administration est une formation plus réduite, qui réunit le collège des membres fondateurs, deux représentants du collège des institutions scientifiques ainsi que six personnalités qualifiées. Sont élus parmi ses membres un(e) président(e), un(e) vice-président(e), et un(e) trésorier(ère).
-
-
+Sont élus parmi ses membres un(e) président(e), un(e) vice-président(e), et un(e) trésorier(ère).
 
 Présidente : Bettina Laville, Conseillère d‘État honoraire
 
@@ -90,9 +63,7 @@ Vice-Président : Hubert BOST, Directeur d'études à l'EPHE-PSL
 
 Trésorière : Isabelle STRAUSS-KAHN, Banque Mondiale
 
-Collège des Membres Fondateurs 
-
-
+### Collège des Membres Fondateurs 
 
 • Ariel WEIL, Maire de Paris Centre
 
@@ -100,19 +71,13 @@ Collège des Membres Fondateurs
 
 • Marie-Eve PERRU, Conseil régional d'Ile-de-France
 
-
-
-Représentants du Collège des institutions scientifiques
-
-
+### Représentants du Collège des institutions scientifiques
 
 • Nathalie DRACH-TEMAM, Présidente de Sorbonne Université
 
 • Hubert BOST, Directeur d'études à l’École Pratique des Hautes Études
 
 Personnalités qualifiées
-
-
 
 • Barbara CASSIN, Académie française
 
