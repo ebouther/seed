@@ -1,6 +1,6 @@
 ---
 title: Fellowship accommodations
-page: 'fellowships_details'
+page: fellowships_details
 ---
 ## Status and remuneration
 
@@ -29,7 +29,7 @@ Residents may receive financial and material support for their research work and
 
 ### Access to partner research libraries
 
-The agreements signed between the IEA and its partner institutions enable residents to benefit from privileged access and extended lending rights [in the main Paris libraries] as soon as they arrive (https://www.paris-iea.fr/fr/sejourner-a-l-iea/bibliotheque).
+The agreements signed between the IEA and its partner institutions enable residents to benefit from privileged access and extended lending rights \[in the main Paris libraries] as soon as they arrive (https://www.paris-iea.fr/fr/sejourner-a-l-iea/bibliotheque).
 
 ### Communication and promotion
 
@@ -43,3 +43,5 @@ Conceived as a place to live, meet people and foster intercultural and interdisc
 ## Help with administrative procedures for obtaining a visa
 
 The IEA works with the Préfecture de Police in Paris to provide future residents with the documents they need to obtain a visa from the French Consulate in their country of residence.
+
+edit: 07/11/2023

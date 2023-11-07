@@ -1,6 +1,6 @@
 ---
 title: Fellowship accommodations
-page: 'home'
+page: home
 ---
 ## Statut et rémunération
 
