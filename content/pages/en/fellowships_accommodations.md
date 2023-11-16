@@ -44,4 +44,4 @@ Conceived as a place to live, meet people and foster intercultural and interdisc
 
 The IEA works with the Préfecture de Police in Paris to provide future residents with the documents they need to obtain a visa from the French Consulate in their country of residence.
 
-edit3
+edit4
