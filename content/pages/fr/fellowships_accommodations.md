@@ -33,4 +33,4 @@ Pensé comme un lieu de vie, de rencontres et d'échanges interculturels et inte
 
 ## Aide pour les démarches administratives à l'obtention d'un visa
 
-L'IEA intervient auprès de la préfecture de police de Paris afin de fournir au futur résident les documents nécessaires à l'obtention de son visa auprès du Consulat de France de son pays de résidence.
+L'IEA intervient auprès de la préfecture de police de Paris afin de fournir au futur résident les documents nécessaires à l'obtention de son visa auprès du Consulat de France de son pays de résidence. edit1FR
