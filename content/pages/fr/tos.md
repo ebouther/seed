@@ -1,5 +1,5 @@
 ---
 title: tos
-page: 'tos'
+page: tos
 ---
-The terms of service of this website should be made available here.
+The terms of service of this website should be made available here. fr
